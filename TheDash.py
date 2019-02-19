@@ -18,7 +18,8 @@ Q7 = {"question": "Which of these North Korean dictators rules first?", "a": "A:
 Q8 = {"question": "What was Shaun Ryders Auto-biography called?", "a": "A:Twisting My Plums", "b": "B:Twisting My Melon", "c": "Ski-ing"}
 Q9 = {"question": "What car did elon musk sent into space?", "a": "Audi", "b": "Honda", "c": "Tesla"}
 Q10 = {"question": "What is the UK?""A:City", "b": "Country", "c": "B:State"}
-Random= [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9]
+Q11 = {"question": "Who is better?""A:PewDiePie", "b": "T-Series", "c": "B:I hate them both"}
+Random= [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10 , Q11]
 def new():
     lbl.configure(text= random.choice(Random))
 lbl = Label(window, text=random.choice(Random))

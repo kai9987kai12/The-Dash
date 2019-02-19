@@ -22,9 +22,12 @@ Q11 = {"question": "Who is better?""A:PewDiePie", "b": "T-Series", "c": "B:I hat
 Random= [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10 , Q11]
 def new():
     lbl.configure(text= random.choice(Random))
+def Close():
+    window.destroy()
 lbl = Label(window, text=random.choice(Random))
 lbl.grid(column=0, row=0)
 ttk.Button(window, text="New Question", command=new).grid(row=2, column=0)
+ttk.Button(window, text="Close", command=Close).grid(row=3, column=0)
 window.resizable(False, False)
 window.iconbitmap('favicon.ico')
 window.attributes("-topmost", True)

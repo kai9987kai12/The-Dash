@@ -42,4 +42,5 @@ Qc.pack()
 ButtonA.pack(side=LEFT)
 ButtonB.pack(side=LEFT)
 ButtonC.pack(side=LEFT)
+root.iconbitmap('favicon.ico')  # Set icon
 root.mainloop()
